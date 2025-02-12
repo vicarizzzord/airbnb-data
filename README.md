@@ -44,5 +44,5 @@ Obs: por estar rodando localmente, as configurações do container são básicas
     pip install -r requirements.txt
 ```
 
-Com o banco de dados rodando com o docker, ja é possível rodar o sistema perfeitamente.
+Com o banco de dados rodando com o docker e a API key do ExchangeRate inserida no arquivo das variáveis de ambiente, ja é possível rodar o sistema perfeitamente.
 
