@@ -3,7 +3,7 @@
 
 ## Descrição
 
-Um projeto de engenharia de dados no qual é utilizada a arquitetura de medalhão para tratamento e inserção dos dados em um banco de dados [Postgre](https://www.postgresql.org/) local, utilizando [Docker](https://www.docker.com/). O projeto também faz requisições na API do [ExchangeRate](https://www.exchangerate-api.com/) para conversão dos preços, pois a base de dados está com valores descritos em dólar USD.
+Um projeto de engenharia de dados no qual é utilizada a arquitetura de medalhão para tratamento e inserção dos dados em um banco de dados [Postgre](https://www.postgresql.org/) local, utilizando [Docker](https://www.docker.com/). O projeto também faz requisições na API do [ExchangeRate](https://www.exchangerate-api.com/), pois a base de dados está com valores descritos em dólar USD, e também faz o download dos dados utilizados no projeto de forma automatizada.
 
 
 
@@ -16,7 +16,7 @@ Um projeto de engenharia de dados no qual é utilizada a arquitetura de medalhã
 
 ## Fluxo do sistema
 ### Bronze
-Os dados são carregados de forma crua em dataframes e salvos no banco de dados com a tag `_bronze`
+Os dados são baixados e carregados de forma crua em dataframes e salvos no banco de dados com a tag `_bronze`
 
 ### Prata
 Depois de carregados em dataframes, há o tratamento das informações faltantes e formatação dos tipos de dados e salvos no banco de dados com a tag `_silver`
