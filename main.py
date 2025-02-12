@@ -24,6 +24,8 @@ engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:secure-passwor
 
 #  Extractin files from airbnb insider and loading with pandas
 
+os.makedirs("data", exist_ok=True)
+
 files = {
     'calendar': 'https://data.insideairbnb.com/brazil/rj/rio-de-janeiro/2024-12-27/data/calendar.csv.gz',
     'listings': 'https://data.insideairbnb.com/brazil/rj/rio-de-janeiro/2024-12-27/data/listings.csv.gz',
